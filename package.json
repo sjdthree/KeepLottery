@@ -1,0 +1,25 @@
+{
+    "dependencies": {
+        "@openzeppelin/contracts": "3.0.1",
+        "@truffle/contract": "^4.2.27",
+        "@truffle/hdwallet-provider": "^1.1.0",
+        "bignumber.js": "9.0.0",
+        "bn.js": "5.1.2",
+        "eth-json-rpc-filters": "^4.1.1",
+        "ethers": "^5.0.14",
+        "multi-token-standard": "0.9.3",
+        "npm-force-resolutions": "0.0.3",
+        "solc": "^0.6.12",
+        "node-fetch": ">=2.6.1"
+    },
+    "devDependencies": {
+        "bl": ">=2.2.1",
+        "elliptic": ">=6.5.3"
+    },
+    "resolutions": {
+        "node-fetch": ">=2.6.1"
+    },
+    "scripts": {
+        "preinstall": "npx npm-force-resolutions"
+    }
+}
