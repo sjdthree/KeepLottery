@@ -35,3 +35,17 @@ let erc20Mock = await ERC20Mock.deployed() // Replace with ERC20 reward token
 await erc20Mock.mockMint(accounts[0], 10000);
 await erc20Mock.approve(lotteryInstance.address, 10000)
 ```
+
+## Usage
+
+### View Outstanding Ticket Balance
+
+```
+let lotteryInstance = await Lottery.deployed()
+let ticketInstance = await MintableTicket.deployed()
+
+let ticketType = await lotteryInstance.getNextDrawTicketType()
+
+let numTickets = await ticketInstance.maxIndex(ticketType)
+numTickets.toString()
+```
